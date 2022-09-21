@@ -1,0 +1,245 @@
+body{
+    background: url("1.png");
+    background-size: 200px 200px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+#logo,#imageUser{
+    height: 85px;
+    width: 85px;
+    border-radius: 200px;
+    border: 5px solid rgba(9, 105, 2, 0.393);
+  }
+
+#cont,#userdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 250px;
+    background: rgb(29,193,81);
+    background: linear-gradient(0deg, rgba(29,193,81,0.9223039557619923) 0%, rgba(207,255,224,0.4881302862942052) 100%);
+    flex-direction: column;
+    margin-top: 15vh;
+    border-radius: 5px;
+    box-shadow: -4px 0px 12px 1px gray;
+    margin-bottom: 300px;
+  }
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:40px;
+  }
+
+#submit,#btnRejected,#btnAccepted,#login{
+    width: 80%;
+    background-color: #008037;
+    border: 2px solid rgba(240, 248, 255, 0);
+    color: aliceblue;
+    margin-bottom: 60px;
+  }
+
+#add,#logout,#update,#delete{
+    width: 40%;
+    background-color: #008037;
+    border: 2px solid rgba(240, 248, 255, 0);
+    color: aliceblue;
+    margin: 10px;
+  }
+
+#delete:hover,#logout:hover{
+    background-color: rgba(240, 127, 112, 0.779);
+    border: 2px solid rgba(240, 127, 112, 0.779);
+    font-weight: bold;
+    color: black;      
+  }
+
+#btnRejected:hover{
+    background-color: rgba(240, 127, 112, 0.779);
+    border: 2px solid rgba(240, 127, 112, 0.779);
+    font-weight: bold;
+    color: black;    
+  }
+
+#btnAccepted:hover{
+    background-color: rgba(112, 240, 121, 0.779);
+    border: 2px solid rgba(112, 240, 121, 0.779);
+    font-weight: bold;
+    color: black;    
+  }
+
+#submit:hover,#login:hover,#add:hover,#update:hover{
+    background-color: rgba(240, 248, 255, 0.253);
+    border: 2px solid rgba(240, 248, 255, 0.779);
+    color: black;
+    font-weight: bold;
+  }
+
+#code,#pass{
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+
+#name{
+    margin-bottom: 14px;
+  }
+
+img{
+    border: 0px solid red;
+    height: 150px;
+    width: 150px;
+    border-radius: 200px;
+  }
+
+#btnRejected,#btnAccepted{    
+    margin-top: 40px;
+  }
+
+.texter{
+    margin-top: 30px;
+  }
+  
+#tableCoupon{
+    margin-bottom: 100px;
+    display: none;
+    justify-content: center;
+  }
+
+table {
+    border-collapse: collapse;
+    background-color: rgba(154, 153, 153, 0.2);
+    text-align: center;
+  }
+  
+th, td {
+    padding: 3px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+#buttonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+#welcomeText{
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+/*  iPads, Tablets */
+@media screen and (min-width: 481px) and  (max-width: 768px){
+  
+  #cont,#userdiv{
+    height: 580px;
+    width: 310px;
+  }
+
+  #code,#id,#pass,#email,#name{
+    width: 250px;
+    height: 50px;
+  }
+
+  #logo{
+    height: 100px;
+    width: 100px;
+  }
+  
+  #welcomeText{
+    font-size: 17px;
+  }
+  
+  th,td{
+  padding: 7px;
+  }
+
+}
+
+    /* Small screens, laptops */
+@media screen and (min-width: 769px) and  (max-width: 1024px){
+      
+  #cont,#userdiv{
+    height: 590px;
+    width: 330px;
+  }
+
+  #code,#id,#pass,#email,#name{
+    width: 270px;
+    height: 50px;
+  }
+
+  #logo{
+    height: 110px;
+    width: 110px;
+  }
+  
+  #welcomeText{
+    font-size: 20px;
+  }
+
+  th,td{
+    padding: 8px;
+  }
+
+    }
+    
+    /* Desktops, large screens */
+@media screen and (min-width: 1025px) and  (max-width: 1200px){
+
+  #cont,#userdiv{
+    height: 600px;
+    width: 340px;
+  }
+
+  #code,#id,#pass,#email,#name{
+    width: 290px;
+    height: 50px;
+  }
+
+  #logo{
+    height: 120px;
+    width: 120px;
+  }
+  
+  #welcomeText{
+    font-size: 21px;
+  }
+
+  th,td{
+    padding: 8px;
+  }
+
+}
+
+    /* Extra large screens, TV */
+  @media screen and (min-width: 1201px) {
+     
+    #cont,#userdiv{
+        height: 600px;
+        width: 350px;
+    }      
+    
+    #code,#id,#pass,#email,#name{
+      width: 300px;
+      height: 50px;
+    }
+
+    #logo{
+      height: 130px;
+      width: 130px;
+    }
+    
+    #welcomeText{
+      font-size: 21px;
+    }
+    
+    th,td{
+      padding: 8px;
+    }
+
+    }
