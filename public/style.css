@@ -2,6 +2,18 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
   }
 
+#footer{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+#social{
+  font-size: 15px;
+}
+#head{
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #logo,#imageUser{
     height: 50px;
     width: 50px;
