@@ -1,252 +1,278 @@
-body{
-    font-family: 'Roboto Condensed', sans-serif;
-  }
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
 
-#footer{
+#footer {
+  font-weight: bold;
   color: rgb(255, 255, 255);
   text-align: center;
+  margin-top: 0px;
 }
-#social{
-  font-size: 15px;
+
+#logo,
+#imageUser {
+  height: 50px;
+  width: 50px;
+  border-radius: 200px;
 }
-#head{
-  font-size: 20px;
+
+#cont,
+#userdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.071);
+  flex-direction: column;
+  margin-top: 15vh;
+  border-radius: 5px;
+  margin-bottom: 300px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+#submit,
+#btnRejected,
+#btnAccepted,
+#login {
+  width: 80%;
+  background-color: #e07f24;
+  border: 2px solid rgba(240, 248, 255, 0);
+  color: aliceblue;
+  margin-bottom: 60px;
+}
+
+#add,
+#logout,
+#update,
+#delete {
+  width: 40%;
+  background-color: #e07f24;
+  border: 2px solid rgba(240, 248, 255, 0);
+  color: aliceblue;
+  margin: 10px;
+}
+
+#delete:hover,
+#logout:hover {
+  background-color: rgba(240, 127, 112, 0.779);
+  border: 2px solid rgba(240, 127, 112, 0.779);
+  font-weight: bold;
+  color: black;
+}
+
+#btnRejected:hover {
+  background-color: rgba(240, 127, 112, 0.779);
+  border: 2px solid rgba(240, 127, 112, 0.779);
+  font-weight: bold;
+  color: black;
+}
+
+#btnAccepted:hover {
+  background-color: rgba(240, 217, 112, 0.779);
+  border: 2px solid rgba(240, 217, 112, 0.779);
+  font-weight: bold;
+  color: black;
+}
+
+#submit:hover,
+#login:hover,
+#add:hover,
+#update:hover {
+  background-color: rgba(240, 248, 255, 0.253);
+  border: 2px solid rgba(240, 248, 255, 0.779);
+  color: black;
   font-weight: bold;
 }
 
-#logo,#imageUser{
-    height: 50px;
-    width: 50px;
-    border-radius: 200px;
-  }
+#code,
+#pass {
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
 
-#cont,#userdiv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    width: 250px;
-    background-color: rgba(255, 255, 255, 0.071);
-    flex-direction: column;
-    margin-top: 15vh;
-    border-radius: 5px;
-    margin-bottom: 300px;
-  }
+#name {
+  margin-bottom: 14px;
+}
 
-.container2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top:40px;
-  }
+img {
+  border: 0px solid red;
+  height: 150px;
+  width: 150px;
+  border-radius: 200px;
+}
 
-#submit,#btnRejected,#btnAccepted,#login{
-    width: 80%;
-    background-color: #e07f24;
-    border: 2px solid rgba(240, 248, 255, 0);
-    color: aliceblue;
-    margin-bottom: 60px;
-  }
+#btnRejected,
+#btnAccepted {
+  margin-top: 40px;
+}
 
-#add,#logout,#update,#delete{
-    width: 40%;
-    background-color: #e07f24;
-    border: 2px solid rgba(240, 248, 255, 0);
-    color: aliceblue;
-    margin: 10px;
-  }
+.texter {
+  margin-top: 30px;
+}
 
-#delete:hover,#logout:hover{
-    background-color: rgba(240, 127, 112, 0.779);
-    border: 2px solid rgba(240, 127, 112, 0.779);
-    font-weight: bold;
-    color: black;      
-  }
-
-#btnRejected:hover{
-    background-color: rgba(240, 127, 112, 0.779);
-    border: 2px solid rgba(240, 127, 112, 0.779);
-    font-weight: bold;
-    color: black;    
-  }
-
-#btnAccepted:hover{
-    background-color: rgba(240, 217, 112, 0.779);
-    border: 2px solid rgba(240, 217, 112, 0.779);
-    font-weight: bold;
-    color: black;    
-  }
-
-#submit:hover,#login:hover,#add:hover,#update:hover{
-    background-color: rgba(240, 248, 255, 0.253);
-    border: 2px solid rgba(240, 248, 255, 0.779);
-    color: black;
-    font-weight: bold;
-  }
-
-#code,#pass{
-    margin-bottom: 30px;
-    margin-top: 15px;
-  }
-
-#name{
-    margin-bottom: 14px;
-  }
-
-img{
-    border: 0px solid red;
-    height: 150px;
-    width: 150px;
-    border-radius: 200px;
-  }
-
-#btnRejected,#btnAccepted{    
-    margin-top: 40px;
-  }
-
-.texter{
-    margin-top: 30px;
-  }
-  
-#tableCoupon{
-    margin-bottom: 100px;
-    display: none;
-    justify-content: center;
-  }
+#tableCoupon {
+  margin-bottom: 100px;
+  display: none;
+  justify-content: center;
+}
 
 table {
-    border-collapse: collapse;
-    background-color: rgba(249, 249, 249, 0.571);
-    text-align: center;
-  }
-  
-th, td {
-    padding: 3px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-  }
+  border-collapse: collapse;
+  background-color: rgba(249, 249, 249, 0.571);
+  text-align: center;
+}
 
-#buttonDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+th,
+td {
+  padding: 3px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
 
-#welcomeText{
-    margin-top: 20px;
-    font-size: 13px;
-  }
+#buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#welcomeText {
+  margin-top: 20px;
+  font-size: 13px;
+}
 
 /*  iPads, Tablets */
-@media screen and (min-width: 481px) and  (max-width: 768px){
-  
-  #cont,#userdiv{
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #cont,
+  #userdiv {
     height: 580px;
     width: 310px;
   }
 
-  #code,#id,#pass,#email,#name{
+  #code,
+  #id,
+  #pass,
+  #email,
+  #name {
     width: 250px;
     height: 50px;
   }
 
-  #logo{
+  #logo {
     height: 100px;
     width: 100px;
   }
-  
-  #welcomeText{
+
+  #welcomeText {
     font-size: 17px;
   }
-  
-  th,td{
-  padding: 7px;
-  }
 
+  th,
+  td {
+    padding: 7px;
+  }
 }
 
-    /* Small screens, laptops */
-@media screen and (min-width: 769px) and  (max-width: 1024px){
-      
-  #cont,#userdiv{
+/* Small screens, laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #cont,
+  #userdiv {
     height: 590px;
     width: 330px;
   }
 
-  #code,#id,#pass,#email,#name{
+  #code,
+  #id,
+  #pass,
+  #email,
+  #name {
     width: 270px;
     height: 50px;
   }
 
-  #logo{
+  #logo {
     height: 110px;
     width: 110px;
   }
-  
-  #welcomeText{
+
+  #welcomeText {
     font-size: 20px;
   }
 
-  th,td{
+  th,
+  td {
     padding: 8px;
   }
+}
 
-    }
-    
-    /* Desktops, large screens */
-@media screen and (min-width: 1025px) and  (max-width: 1200px){
-
-  #cont,#userdiv{
+/* Desktops, large screens */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  #cont,
+  #userdiv {
     height: 600px;
     width: 340px;
   }
 
-  #code,#id,#pass,#email,#name{
+  #code,
+  #id,
+  #pass,
+  #email,
+  #name {
     width: 290px;
     height: 50px;
   }
 
-  #logo{
+  #logo {
     height: 120px;
     width: 120px;
   }
-  
-  #welcomeText{
+
+  #welcomeText {
     font-size: 21px;
   }
 
-  th,td{
+  th,
+  td {
     padding: 8px;
   }
-
 }
 
-    /* Extra large screens, TV */
-  @media screen and (min-width: 1201px) {
-     
-    #cont,#userdiv{
-        height: 600px;
-        width: 350px;
-    }      
-    
-    #code,#id,#pass,#email,#name{
-      width: 300px;
-      height: 50px;
-    }
+/* Extra large screens, TV */
+@media screen and (min-width: 1201px) {
+  #cont,
+  #userdiv {
+    height: 600px;
+    width: 350px;
+  }
 
-    #logo{
-      height: 130px;
-      width: 130px;
-    }
-    
-    #welcomeText{
-      font-size: 21px;
-    }
-    
-    th,td{
-      padding: 8px;
-    }
+  #code,
+  #id,
+  #pass,
+  #email,
+  #name {
+    width: 300px;
+    height: 50px;
+  }
 
-    }
+  #logo {
+    height: 130px;
+    width: 130px;
+  }
+
+  #welcomeText {
+    font-size: 21px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
