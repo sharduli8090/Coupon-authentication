@@ -1,58 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Access</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/85052520"
+      type="image/icon type"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin Access</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/85052520" type="image/icon type">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-   
-</head>
+  <body style="background-color: black">
+    <div class="container" id="cont">
+      <img
+        src="https://avatars.githubusercontent.com/u/85052520"
+        alt="logo"
+        id="logo"
+      />
 
+      <div class="container2">
+        <input
+          class="form-control"
+          type="email"
+          id="email"
+          placeholder="Email"
+          autocomplete="off"
+        />
+        <input
+          class="form-control"
+          type="password"
+          id="pass"
+          placeholder="Password"
+          autocomplete="off"
+        />
 
-<body style="background-color: black;">
-  <div class="container" id="cont">
-
-    <img
-      src="https://avatars.githubusercontent.com/u/85052520"
-        alt="logo" id="logo" />
-        
-    <div class="container2">
-      <input class="form-control" type="email" id="email" placeholder="Email" autocomplete="off">
-      <input class="form-control" type="password" id="pass" placeholder="Password" autocomplete="off">
-
-      <button class="btns btn" id="login">
-        Login
-      </button>
-    
-  </div></div>
-
-  <div id="userdiv" class="container" style="margin-bottom: 80px;">
-    <img src="https://avatars.githubusercontent.com/u/85052520" 
-    id="imageUser" alt="logo" />
-
-    <div id="useremail" class="display-6 text-center" style=" font-weight:bold;color:white;">Welcome User!</div><br>
-   
-        <input class="form-control" type="text" id="name" placeholder="Name" autocomplete="off"/>
-        <input class="form-control" type="text" id="id" placeholder="ID" autocomplete="off" />
-        <input class="form-control" type="text" id="code" placeholder="Coupon Code" autocomplete="off" />
-        <div id="buttonDiv">
-            <button class="btns btn" type="submit" id="add">Add</button>
-            <button class="btns btn" type="submit" id="update">Update</button>
-            <button class="btns btn" type="submit" id="delete">Delete</button>
-          <button class="btns btn" type="submit" id="logout">Logout</button>
+        <button class="btns btn" id="login">Login</button>
       </div>
-      
     </div>
 
-    <br>
-    <div   id="tableCoupon">
-      <table  >
-        <thead >
+    <div id="userdiv" class="container" style="margin-bottom: 80px">
+      <img
+        src="https://avatars.githubusercontent.com/u/85052520"
+        id="imageUser"
+        alt="logo"
+      />
+
+      <div
+        id="useremail"
+        class="display-6 text-center"
+        style="font-weight: bold; color: white"
+      >
+        Welcome User!
+      </div>
+      <br />
+
+      <input
+        class="form-control"
+        type="text"
+        id="name"
+        placeholder="Name"
+        autocomplete="off"
+      />
+      <input
+        class="form-control"
+        type="text"
+        id="id"
+        placeholder="ID"
+        autocomplete="off"
+      />
+      <input
+        class="form-control"
+        type="text"
+        id="code"
+        placeholder="Coupon Code"
+        autocomplete="off"
+      />
+      <div id="buttonDiv">
+        <button class="btns btn" type="submit" id="add">Add</button>
+        <button class="btns btn" type="submit" id="update">Update</button>
+        <button class="btns btn" type="submit" id="delete">Delete</button>
+        <button class="btns btn" type="submit" id="logout">Logout</button>
+      </div>
+    </div>
+
+    <br />
+    <div id="tableCoupon">
+      <table>
+        <thead>
           <th>ROLL No.</th>
           <th>NAME</th>
           <th>COUPON CODE</th>
@@ -60,25 +107,42 @@
           <th>SELECT</th>
         </thead>
 
-        <tbody id="tbody1">
-        </tbody>
+        <tbody id="tbody1"></tbody>
       </table>
-
     </div>
+    <hr>
+    <footer id="footer" class="my-2 pt-1 border-top">
+      Created with
+      <i
+        class="fa fa-heart"
+        style="font-size: 15px; color: rgb(255, 0, 128)"
+      ></i>
+      by
+      <a
+        href="https://www.instagram.com/tutoriex_/"
+        target="_blank"
+        style="text-decoration: none; color: white"
+      >
+        Tutoriex</a
+      >
+      &
+      <a
+        href="https://www.instagram.com/creativstan/"
+        target="_blank"
+        style="text-decoration: none; color: white"
+      >
+        Creativstan
+      </a>
+      <div id="copy" style="font-size: 10px; color: gray">
+        Copyright 2022 Creativstan | Tutoriex
+      </div>
+    </footer>
+  </body>
 
-    <footer id="footer">
-      
-      <div id="head">
-        <hr>
-      Created with <i class="fa fa-heart" style="font-size:15px;color:rgb(255, 0, 128)"></i> by
-      <a href="https://www.instagram.com/tutoriex_/" target="_blank" style="text-decoration: none;color: white;" > Tutoriex</a> & <a href="https://www.instagram.com/creativstan/" target="_blank" style="text-decoration: none;color: white;">
-        Creativstan </a></div>
-      <div id="copy" style="font-size: 10px;color:gray">Copyright 2022 Creativstan | Tutoriex</div>
-     
-      </footer>
-</body>
-
-<script type="module" src="login.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
-</script>
+  <script type="module" src="login.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
 </html>
