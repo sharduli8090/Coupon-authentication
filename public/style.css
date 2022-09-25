@@ -1,14 +1,11 @@
 body{
-    background: url("1.png");
-    background-size: 200px 200px;
     font-family: 'Roboto Condensed', sans-serif;
   }
 
 #logo,#imageUser{
-    height: 85px;
-    width: 85px;
+    height: 50px;
+    width: 50px;
     border-radius: 200px;
-    border: 5px solid rgba(9, 105, 2, 0.393);
   }
 
 #cont,#userdiv{
@@ -17,12 +14,10 @@ body{
     justify-content: center;
     height: 500px;
     width: 250px;
-    background: rgb(29,193,81);
-    background: linear-gradient(0deg, rgba(29,193,81,0.9223039557619923) 0%, rgba(207,255,224,0.4881302862942052) 100%);
+    background-color: rgba(255, 255, 255, 0.071);
     flex-direction: column;
     margin-top: 15vh;
     border-radius: 5px;
-    box-shadow: -4px 0px 12px 1px gray;
     margin-bottom: 300px;
   }
 
@@ -36,7 +31,7 @@ body{
 
 #submit,#btnRejected,#btnAccepted,#login{
     width: 80%;
-    background-color: #008037;
+    background-color: #e07f24;
     border: 2px solid rgba(240, 248, 255, 0);
     color: aliceblue;
     margin-bottom: 60px;
@@ -44,7 +39,7 @@ body{
 
 #add,#logout,#update,#delete{
     width: 40%;
-    background-color: #008037;
+    background-color: #e07f24;
     border: 2px solid rgba(240, 248, 255, 0);
     color: aliceblue;
     margin: 10px;
@@ -65,8 +60,8 @@ body{
   }
 
 #btnAccepted:hover{
-    background-color: rgba(112, 240, 121, 0.779);
-    border: 2px solid rgba(112, 240, 121, 0.779);
+    background-color: rgba(240, 217, 112, 0.779);
+    border: 2px solid rgba(240, 217, 112, 0.779);
     font-weight: bold;
     color: black;    
   }
@@ -110,7 +105,7 @@ img{
 
 table {
     border-collapse: collapse;
-    background-color: rgba(154, 153, 153, 0.2);
+    background-color: rgba(249, 249, 249, 0.571);
     text-align: center;
   }
   
