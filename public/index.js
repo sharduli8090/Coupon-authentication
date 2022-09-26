@@ -62,6 +62,7 @@ function rejected() {
   // div.setAttribux
   div.setAttribute("class", "text-center display-6 texter");
   div.setAttribute("style", "font-weight:bold");
+  div.setAttribute("style", "color:red");
   div.innerHTML = "Wrong Coupon Code Entered!";
   element.appendChild(div);
   var btn = document.createElement("button");
@@ -86,6 +87,7 @@ function accepted() {
   var div1 = document.createElement("div");
   div1.setAttribute("class", "text-center display-6 texter");
   div1.setAttribute("style", "font-weight:bold");
+  div1.setAttribute("style", "color:green");
   div1.setAttribute("id", "accepted");
   div1.innerHTML = "Coupon Code Accepted";
   element.appendChild(div1);
