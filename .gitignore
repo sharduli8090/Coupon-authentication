@@ -10,9 +10,6 @@ firebase-debug.*.log*
 # Firebase cache
 .firebase/
 
-# Credential
-cred.js
-
 # Firebase config
 
 # Uncomment this if you'd like others to create their own Firebase project.
@@ -67,6 +64,3 @@ node_modules/
 
 # dotenv environment variables file
 .env
-
-#owner auth by google
-googled5397c3c45d67965.html
